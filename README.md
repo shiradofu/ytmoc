@@ -77,7 +77,7 @@ frontend UI.
 
 ### Command Usage
 
-#### `ytmoc open`
+#### `open`
 
 ```
 ytmoc open [playlist name]
@@ -90,7 +90,7 @@ When playlist name (and subcommand) is omitted,
     2. If not, $YTMOC_DEFAULT_LIST will open.
 ```
 
-#### ytmoc toggle
+#### `toggle`
 
 ```
 ytmoc toggle
@@ -108,7 +108,7 @@ ytmoc q
 Shutdown the moc server.
 ```
 
-#### ytmoc sync
+#### `sync`
 
 ```
 ytmoc sync [playlist name]...
