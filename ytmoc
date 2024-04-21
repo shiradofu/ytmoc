@@ -118,14 +118,15 @@ _ytmoc_toggle() {
   $mocp --toggle-pause
 }
 
+_ytmoc_quit() {
+  $mocp --exit
+}
+
 case "$1" in
   "" | o | open ) shift; _ytmoc_open "$@";;
-  t | toggle ) _ytmoc_toggle;;
-  sync )
-    cmd=$1
-    shift;
-    "_ytmoc_$cmd" "$@"
-  ;;
+  t | toggle    ) _ytmoc_toggle;;
+  q | quit      ) _ytmoc_quit;;
+  sync          ) shift; "_ytmoc_sync" "$@";;
   * )
     err "invalid command: '$1'"
     exit

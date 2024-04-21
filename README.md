@@ -99,6 +99,15 @@ ytmoc t
 Toggle pause and unpause.
 ```
 
+#### `quit`
+
+```
+ytmoc quit
+ytmoc q
+
+Shutdown the moc server.
+```
+
 #### ytmoc sync
 
 ```
